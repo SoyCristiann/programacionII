@@ -5,4 +5,8 @@ public class Circle {
         this.radius = radius;
     }
     public double getRadius() { return radius; }
+
+    public double getArea() {
+        return Math.PI * getRadius() * getRadius();
+    }
 }
