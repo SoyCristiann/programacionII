@@ -1,13 +1,19 @@
 public class Circle implements IShape{
     private final double radius;
-    public Circle(double radius) {
 
+    public Circle(double radius) {
         this.radius = radius;
     }
+
     public double getRadius() { return radius; }
 
     @Override
     public double getArea() {
-        return Math.PI * getRadius() * getRadius();
+        return Math.round(Math.PI * getRadius() * getRadius());
+    }
+
+    @Override
+    public String getName(){
+        return "Circle";
     }
 }
