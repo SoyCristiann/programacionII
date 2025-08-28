@@ -1,4 +1,4 @@
-public class Circle {
+public class Circle implements IShape{
     private final double radius;
     public Circle(double radius) {
 
@@ -6,6 +6,7 @@ public class Circle {
     }
     public double getRadius() { return radius; }
 
+    @Override
     public double getArea() {
         return Math.PI * getRadius() * getRadius();
     }
